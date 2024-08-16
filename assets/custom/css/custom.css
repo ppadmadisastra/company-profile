@@ -184,6 +184,7 @@ body{
     right: 0;
     bottom: 0;
     background-color: rgba(44,62,79,.8);
+    /* background-color: #E54D42; */
 }
 .overlay-lighter:after{
     background-color: rgba(44,62,79,.7);
@@ -356,7 +357,7 @@ body{
     transition: all ease-in-out .3s;
 }
 .fables-testimonial {
-    background-image: url(../images/big-overlay.jpg);  
+    /* background-image: url(../images/big-overlay.jpg);   */
 }
 .fables-testimonial-no-background{
     background: none;
@@ -2792,6 +2793,7 @@ a:hover , .btn-link:hover{
 }
 .fables-btn-rounded {
     border-radius: 30px;
+    border-color: #fff;
 }
 .fables-btn-rounded span{
     z-index: 2;
@@ -2834,7 +2836,8 @@ a:hover , .btn-link:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332c3e4f', endColorstr='#c42c3e4f',GradientType=0 );
 }
 .fables-main-background-color ,.fables-main-before a::before , .fables-main-before a::after ,.fables-main-active.active , .fables-main-dots .owl-dot.active span ,.fables-main-hover-background-color:hover{
-    background-color: #2C3E4F !important;
+    /* background-color: #2C3E4F !important; */
+    background-color: #FFF !important;
 }
 .fables-main-text-color{
     color: #2C3E4F ;
@@ -2886,7 +2889,8 @@ a:hover , .btn-link:hover{
     position: relative;
 }
 .fables-forth-background-color ,.fables-forth-before a::before, .fables-forth-after::after , .fables-forth-hover-backround-color:hover{
-    background-color: #5C6A77 !important;
+    /* background-color: #5C6A77 !important; */
+    background-color: #2a2d33 !important;
 }
 .fables-forth-text-color{
     color: #5C6A77;

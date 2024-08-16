@@ -37,7 +37,8 @@
     margin-top: 8px;
 }
 .fables-nav .nav-link {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
+    color: #596570;
     font-size: 14px;
     font-weight: 400;
     transition: all 0.3s ease-in-out;
