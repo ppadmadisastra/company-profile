@@ -1,0 +1,15 @@
+31/08/24
+- Konten about us page
+- Konten services
+- Update footer each page
+____________________________________________________________________________
+
+Planning:
+- Banner images
+- Layouting:Tampilan pc gambar kanan desc kiri. Tampilan hp atas Bawah.
+- Buka gambar
+- Hover button
+- Ketika gambar service, menuju gambar yg dimaksud
+- Mobile view
+- Hosting
+- Payment
