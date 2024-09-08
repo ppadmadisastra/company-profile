@@ -3,13 +3,18 @@
 - Konten services
 - Update footer each page
 ____________________________________________________________________________
-
-Planning:
+01/09/24
 - Banner images
+- Update button menu
 - Layouting:Tampilan pc gambar kanan desc kiri. Tampilan hp atas Bawah.
+____________________________________________________________________________
+Planning:
 - Buka gambar
 - Hover button
+- Hover menu
 - Ketika gambar service, menuju gambar yg dimaksud
+- Logo leveling
+- Button Navbar request Handling
 - Mobile view
 - Hosting
 - Payment
