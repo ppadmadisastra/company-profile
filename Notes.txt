@@ -13,10 +13,12 @@ ____________________________________________________________________________
 - Hosting
 - Buka gambar
 ____________________________________________________________________________
-Planning:
-- Hover button
+10/09/24
 - Hover menu
-- Ketika gambar service, menuju gambar yg dimaksud
+- Hover button: navbar, slide banner, content home
 - Logo leveling
 - Button Navbar request Handling
+- Ketika gambar service, menuju gambar yg dimaksud
 - Mobile view
+
+

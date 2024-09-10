@@ -356,9 +356,9 @@ body{
     -webkit-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
 }
-.fables-testimonial {
-    /* background-image: url(../images/big-overlay.jpg);   */
-}
+/* .fables-testimonial {
+    background-image: url(../images/big-overlay.jpg);  
+} */
 .fables-testimonial-no-background{
     background: none;
     padding: 0;
@@ -3435,4 +3435,24 @@ a.toggle-menu{
     border-right: 0 !important;
     border-left: 0 !important;
     border-radius: 0;
+}
+.custom-btn {
+    background-color: #E54D42 !important;
+    border-color: #E54D42;
+}
+.custom-btn:hover {
+    background-color: #FF9933 !important;
+    border-color: #FF9933;
+}
+
+
+.custom-btn2 {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.custom-btn2:hover {
+    background-color: #FF9933 !important;
+    border-color: #FF9933;
+    color: #FFFFFF;
 }
