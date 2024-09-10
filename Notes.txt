@@ -8,13 +8,15 @@ ____________________________________________________________________________
 - Update button menu
 - Layouting:Tampilan pc gambar kanan desc kiri. Tampilan hp atas Bawah.
 ____________________________________________________________________________
-Planning:
+09/09/24
+- Payment
+- Hosting
 - Buka gambar
+____________________________________________________________________________
+Planning:
 - Hover button
 - Hover menu
 - Ketika gambar service, menuju gambar yg dimaksud
 - Logo leveling
 - Button Navbar request Handling
 - Mobile view
-- Hosting
-- Payment

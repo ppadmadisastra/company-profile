@@ -37,22 +37,25 @@
     <link href="assets/custom/css/custom.css" rel="stylesheet">
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
     <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <!-- IMAGE MODAL CUSTOM CSS RESPONSIVE FILE -->
+    <link href="assets/custom/css/image-modal.css" rel="stylesheet">
 </head>
-
 <body>
+    
     <div class="search-section">
         <a class="close-search" href="#"></a>
         <div class="d-flex justify-content-center align-items-center h-100">
-            <form method="post" action="#" class="w-50">
-                <div class="row">
-                    <div class="col-10">
-                        <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
+            <div class="row position-relative">
+                <a class="prev">&#10094;</a> <!-- Panah kiri -->
+                <img class="modal-content" width="100%">
+                <figcaption>
+                    <div class="mfp-bottom-bar">
+                        <div class="mfp-title"></div>
+                        <div class="mfp-counter"></div>
                     </div>
-                    <div class="col-2 mt-3">
-                        <button type="submit" class="btn bg-transparent text-white"> <i class="fas fa-search"></i> </button>
-                    </div>
-                </div>
-            </form>
+                </figcaption>
+                <a class="next">&#10095;</a> <!-- Panah kanan -->
+            </div>
         </div>
     </div>
 
@@ -491,32 +494,61 @@
                    </div>
                </div>
            </div>
+           
             <div class="row">
                 <div class="container">
                     <div class="owl-carousel owl-theme nav-0 carousel-items-6 dots-0">
                        <div> 
-                           <img src="assets/custom/images/project-one.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                            <!-- <img src="assets/custom/images/project-one.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img"> -->
+                            <!-- Trigger the Modal -->
+                            
+                            <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                                <img id="myImg" src="assets/custom/images/project-one.jpg" alt="Project 1, 1 of 8" style="width:100%;max-width:300px">
+                                <!-- <span class="fables-iconsearch-icon"></span> -->
+                            </a>
+                            <!-- The Modal -->
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-two.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-two.jpg" alt="Project 2, 2 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-three.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-three.jpg" alt="Project 3, 3 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-four.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-four.jpg" alt="Project 4, 4 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-five.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-five.jpg" alt="Project 5, 5 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-six.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-six.jpg" alt="Project 6, 6 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-seven.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-seven.jpg" alt="Project 7, 7 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                        <div> 
-                           <img src="assets/custom/images/project-eight.jpg" alt="Fables Template" class="border-hover fables-partner-carousel-img">  
+                        <a href="#" class="open-search fables-third-text-color right  top-header-link fables-second-hover-color border-0 max-line-height">
+                            <img id="myImg" src="assets/custom/images/project-eight.jpg" alt="Project 8, 8 of 8" style="width:100%;max-width:300px">
+                            <!-- <span class="fables-iconsearch-icon"></span> -->
+                        </a>
                        </div>
                      </div>  
                 </div>
@@ -662,6 +694,7 @@
         <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
         <script src="assets/vendor/fancybox-master/jquery.fancybox.min.js"></script>
         <script src="assets/custom/js/custom.js"></script>  
- 
+        <script src="assets/custom/js/image-modal.js"></script>  
+    
     </body>
 </html>

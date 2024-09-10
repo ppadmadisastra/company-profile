@@ -51,26 +51,122 @@ $(document).ready(function(){
  });   
     
 
-    // START TOGGLE SEARCH
-    $(".open-search").click(function (e){
-        e.preventDefault();
-        $(".search-section").fadeIn('fast');
-        $(".search-input").focus();
-        $('body').css({"overflow":"hidden"});
-    });
+    // // START TOGGLE SEARCH
+    // $(".open-search").click(function (e){
+    //     e.preventDefault();
+    //     $(".search-section").fadeIn('fast');
+    //     $(".search-input").focus();
+    //     $('body').css({"overflow":"hidden"});
+    // });
     
-    $(".close-search").click(function (e){
-        e.preventDefault();
-        $(".search-section").fadeOut('fast');
-        $('body').css({"overflow":"visible"});
-    });
+    // $(".close-search").click(function (e){
+    //     e.preventDefault();
+    //     $(".search-section").fadeOut('fast');
+    //     $('body').css({"overflow":"visible"});
+    // });
     
-    $(document).keyup(function(e) {
-    if (e.which == 27) {
-        $(".search-section").fadeOut('fast');
-        $('body').css({"overflow":"visible"});
+    // $(document).keyup(function(e) {
+    // if (e.which == 27) {
+    //     $(".search-section").fadeOut('fast');
+    //     $('body').css({"overflow":"visible"});
+    // }
+    // });
+// Deklarasi variabel global untuk menyimpan data gambar
+let images = [];
+let currentIndex = 0;
+
+// START TOGGLE SEARCH
+$(".open-search").click(function (e) {
+    e.preventDefault();
+
+    // Ambil semua gambar di dalam elemen yang memiliki kelas .open-search
+    images = $(".open-search").map(function () {
+        const img = $(this).find('img');
+        return {
+            src: img.attr('src'),
+            alt: img.attr('alt'),
+        };
+    }).get();
+
+    // Cari index dari gambar yang diklik
+    currentIndex = $(this).index(".open-search");
+
+    // Tampilkan gambar pada modal
+    showImage(currentIndex);
+
+    // Tampilkan modal
+    $(".search-section").fadeIn('fast');
+    $('body').css({ "overflow": "hidden" });
+});
+
+// Fungsi untuk menampilkan gambar berdasarkan indeks
+function showImage(index) {
+    const { src, alt } = images[index];
+    const [title, counter] = alt.split(',');
+
+    $(".search-section .modal-content").attr('src', src).attr('alt', alt);
+    $(".search-section .mfp-title").text(title.trim());
+    $(".search-section .mfp-counter").text(counter.trim());
+}
+
+$(".close-search").click(function (e) {
+    e.preventDefault();
+    closeModal();
+});
+
+// Fungsi untuk menutup modal
+function closeModal() {
+    $(".search-section").fadeOut('fast');
+    $('body').css({ "overflow": "visible" });
+}
+
+// Event handler untuk klik di luar gambar
+$(".search-section").click(function (e) {
+    // Cek apakah klik terjadi di luar gambar modal dan tombol navigasi
+    if (!$(e.target).closest(".modal-content, .prev, .next").length) {
+        closeModal();
     }
-    
+});
+
+// Event handler untuk panah kiri (sebelumnya)
+$(".prev").click(function (e) {
+    e.preventDefault();
+    navigateLeft();
+});
+
+// Event handler untuk panah kanan (berikutnya)
+$(".next").click(function (e) {
+    e.preventDefault();
+    navigateRight();
+});
+
+// Navigasi ke gambar sebelumnya
+function navigateLeft() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    showImage(currentIndex);
+}
+
+// Navigasi ke gambar berikutnya
+function navigateRight() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    showImage(currentIndex);
+}
+
+// Event listener untuk keyboard navigation
+$(document).keyup(function (e) {
+    if ($(".search-section").is(":visible")) {
+        switch (e.key) {
+            case "Escape": // Tombol Escape untuk menutup modal
+                closeModal();
+                break;
+            case "ArrowLeft": // Tombol panah kiri untuk navigasi ke gambar sebelumnya
+                navigateLeft();
+                break;
+            case "ArrowRight": // Tombol panah kanan untuk navigasi ke gambar berikutnya
+                navigateRight();
+                break;
+        }
+    }
 });
     
 // 3 items carousel carousel-items-6
